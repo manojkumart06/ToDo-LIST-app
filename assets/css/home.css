@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(152,214,211);
+}
+
+/* Container for a single task */
+.singleTask {
+    border: 2px solid white;
+    width: 60%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Delete checkbox style */
+.delechack {
+    margin: 15px;
+}
+
+/* Category section */
+.catesec {
+    border: 2px solid black;
+    background-color: rgb(244,228,104);
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* TODO heading style */
+.todoheading {
+    color: rgb(255,255,255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Form styles */
+.form_class {
+    width: 60%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Description area */
+.desc_Class input {
+    height: 50px;
+    width: 100%;
+    margin-left: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    outline: none;
+}
+
+.desc_Class input:hover {
+    box-shadow: 0px 0px 8px whitesmoke;
+    background-color: wheat;
+}
+
+/* Select and input area */
+.select_and_input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.select_and_input select,
+.select_and_input input {
+    height: 45px;
+    width: 45%;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.select_and_input select:hover,
+.select_and_input input:hover {
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    background-color: rgb(98, 153, 221);
+}
+
+/* Dates value style */
+.datesValues:hover {
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    background-color: rgb(196, 255, 241);
+}
+
+/* Button style */
+.buttonDesign {
+    height: 50px;
+    width: 120px;
+    color: black;   
+    background-color: rgb(248,229,91);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.buttonDesign:hover {
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+/* Common class style */
+.commonClass {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.commonClass:hover {
+    box-shadow: 0px 0px 8px rgba(14, 6, 6, 0.8);
+    transform: scale(1.2);
+}
+
+/* Edit class style */
+.editClass {
+    transition: transform 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.editClass:hover {
+    box-shadow: 0px 0px 8px rgba(14, 6, 6, 0.8);
+    transform: scale(1.2);
+}
+
+.editClass a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    background-color:rgb(255,82,0);
+}
+
+/* Edit button style */
+.edit-button {
+    margin-top: 10px;
+    height: 30px;
+    width: 90px;
+    background-color: rgb(255,82,0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Different category styles */
+.Workrelated {
+    background-color: lightcoral;
+}
+
+.Family {
+    background-color: skyblue;
+}
+
+.Sports {
+    background-color: green;
+}
+
+.Others {
+    background-color: teal;
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 600px) {
+    .singleTask {
+        width: 80%;
+    }
+
+    .form_class,
+    .catesec {
+        width: 80%;
+    }
+}
